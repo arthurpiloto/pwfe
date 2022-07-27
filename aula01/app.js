@@ -1,8 +1,8 @@
 // Esse comando obriga o arquivo a ser mais específico em relação a criação das variáveis
 'use strict'
 
-const nome = 'Arthur'
-const sobrenome = 'Piloto'
+const nome = prompt('Digite seu primeiro nome')
+const sobrenome = prompt('Digite seu sobrenome')
 
 // const nomeCompleto = nome + ' ' + sobrenome
 
