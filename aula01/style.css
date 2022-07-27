@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding-top: 16px;
+    background-color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+input {
+    width: 400px;
+}
+
+div {
+    height: 100px;
+    width: 400px;
+    padding: 16px;
+    border: 2px solid white;
+    font-size: large;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
