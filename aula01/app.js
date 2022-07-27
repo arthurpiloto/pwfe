@@ -1,13 +1,18 @@
 // Esse comando obriga o arquivo a ser mais específico em relação a criação das variáveis
 'use strict'
 
-const nome = prompt('Digite seu primeiro nome')
-const sobrenome = prompt('Digite seu sobrenome')
+// Formato tradicional de criar uma função
+// Função que junta o nome e sobrenome e mostra o nome completo
+function juntarNome (){
+    const nome = document.getElementById('nome').value
+    const sobrenome = document.getElementById('sobrenome').value
+    
+    // Essa String reconhece variáveis e funções
+    // Os dois comandos fazem a mesma coisa. Entretanto, o segundo formato é melhor.
+    // const nomeCompleto = nome + ' ' + sobrenome
+    const nomeCompleto = `${nome} ${sobrenome}`
+    
+    console.log('Seu nome é ' + nomeCompleto)
+}
 
-// const nomeCompleto = nome + ' ' + sobrenome
-
-// Essa String reconhece variáveis e funções
-// Os dois comandos, liha 4 e linha 8, fazem a mesma coisa. Entretanto, o formato da linha 8 é melhor.
-const nomeCompleto = `${nome} ${sobrenome}`
-
-console.log(nomeCompleto)
+document.getElementById('juntar').addEventListener('click', juntarNome)
