@@ -1,13 +1,12 @@
 'use strict'
 
-function somarNumeros (){
-    const primeiroNumero = document.getElementById('primeiroNumero').value
-    const segundoNumero = document.getElementById('segundoNumero').value
+function somar() {
+    const numero1 = document.getElementById('primeiroNumero').value
+    const numero2 = document.getElementById('segundoNumero').value
     const resultado = document.getElementById('resultado')
 
-    const somaTotal = `Seu nome é: ${nome} ${sobrenome}`
-
+    const somaTotal = numero1 + ' + ' + numero2 + ' = ' + (parseFloat(numero1) + parseFloat(numero2))
     resultado.textContent = somaTotal
 }
 
-document.getElementById('somar').addEventListener('click', somarNumeros)
+document.getElementById('somar').addEventListener('click', somar)
