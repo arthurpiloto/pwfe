@@ -1,6 +1,8 @@
 `use strict`
 
 const numeros = [2, 5, 7, 45, 23, 80, 120]
+const nomes = [`Arthur`, `Vinícius`, `Milena`, `Matheus`]
+const frutas = [`Uva`, `Maçã`, `Banana`, `Melancia`]
 
 // Problema: Exibir os elementos do array no console
 // Solução imperativa (while)
@@ -24,11 +26,30 @@ const numeros = [2, 5, 7, 45, 23, 80, 120]
 // numeros.forEach(mostrarElementos)
 
 // Problema: Exibir os elementos do array no layout
-const criarItems = (numero) => {
-    const ul = document.querySelector(`ul`)
+// const criarItems = (numero) => {
+//     const ul = document.querySelector(`ul`)
+//     const div = document.createElement(`div`)
+//     div.classList.add(`items`)
+//     div.textContent = numero
+//     ul.appendChild(div)
+// }
+// numeros.forEach(criarItems)
+
+const criarContainer = (titulo, array) =>
+{
+    const main = document.querySelector(`main`)
     const div = document.createElement(`div`)
-    div.classList.add(`items`)
-    div.textContent = numero
-    ul.appendChild(div)
+    div.classList.add(`array-container`)
+    div.innerHTML =
+    `
+    <h2>${titulo}</h2>
+    <ul>
+        <li class="items">${array.join(`</li><li class="items">`)}</li>
+    </ul>
+    `
+    main.appendChild(div)
 }
-numeros.forEach(criarItems)
+
+criarContainer(`Problema 01`, numeros)
+criarContainer(`Clientes`, nomes)
+criarContainer(`Produtos`, frutas)

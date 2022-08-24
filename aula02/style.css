@@ -26,9 +26,10 @@ ul {
 }
 
 .items {
-    width: 10rem;
+    width: auto;
     height: 10rem;
-    background-color: tomato;
+    min-width: 10rem;
+    background-color: #e93d3d;
     display: flex;
     justify-content: center;
     align-items: center;
