@@ -59,3 +59,7 @@ const sum04 = (a, b) => a + b
 const numbersPlus04 = numbers.map(numbersSum04)
 const totalValue04 = numbersPlus04.reduce(sum04, 0)
 showArray([totalValue04], `main`, `TOTAL VALUES PLUS 04`)
+
+const numbersSum21 = (value) => value + 21
+const oddNumbersPlus21 = oddNumbers.map(numbersSum21)
+showArray(oddNumbersPlus21, `main`, `ODD NUMBERS PLUS 21`)
