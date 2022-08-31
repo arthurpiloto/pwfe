@@ -38,3 +38,14 @@ showArray(numbers, `main`, `ALL NUMBERS`)
 showArray(numbersDiscount, `main`, `DISCOUNT OF 02`)
 showArray(valuesSmaller20, `main`, `VALUES SMALLER THAN 20`)
 showArray([totalValue], `main`, `TOTAL VALUES`)
+
+/* Exercícios
+    1º - Aumentar 100 em cada elemento
+    2º - Somente os números pares
+    3º - Total dos valores com desconto de 4
+    4º - Array com todos os ímpares somando 21
+*/
+
+const numbersSum100 = (value) => value + 100
+const numbersPlus100 = numbers.map(numbersSum100)
+showArray(numbersPlus100, `main`, `NUMBERS PLUS 100`)
