@@ -1,7 +1,7 @@
 `use strict`
 
-const showArray = (numbers) => {
-    const container = document.querySelector(`main`)
+const showArray = (numbers, element) => {
+    const container = document.querySelector(element)
     const div = document.createElement(`div`)
     div.classList.add(`numbers-container`)
 
