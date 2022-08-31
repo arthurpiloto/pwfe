@@ -59,7 +59,7 @@ const oddNumbers = numbers.filter(odd)
 showArray(oddNumbers, `main`, `ODD NUMBERS`)
 
 // Exercício 03
-const numbersSum04 = (value) => value + 4
+const numbersSum04 = (value) => value - 4
 const sum04 = (a, b) => a + b
 const numbersPlus04 = numbers.map(numbersSum04)
 const totalValue04 = numbersPlus04.reduce(sum04, 0)
