@@ -22,8 +22,19 @@ const valuesSmaller20 = numbers.filter(smaller20)
 // Sintaxe = array.filter(callBack)
 // Obrigatoriamente o retorno do callBack tem que ser booleano
 
+// Somar todos os valores dos elementos do Array
+const sum = (a, b) => a + b
+const totalValue = numbers.reduce(sum, 0)
+// O método reduce() percorre um Array aplicando um callBack e retorna um único valor
+// Sintaxe = array.reduce(callBack, valorAcumulador)
+/* Parâmetros do callBack
+    1º - Acumulador
+    2º - Elemento
+    3º - Índice
+    4º - Array
+*/
+
 showArray(numbers, `main`, `ALL NUMBERS`)
 showArray(numbersDiscount, `main`, `DISCOUNT OF 02`)
 showArray(valuesSmaller20, `main`, `VALUES SMALLER THAN 20`)
-showArray(numbers, `main`)
-showArray(numbers, `main`, `TEST`)
+showArray([totalValue], `main`, `TOTAL VALUES`)
