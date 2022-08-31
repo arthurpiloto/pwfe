@@ -3,6 +3,7 @@
 import { showArray } from "./showArray.js"
 
 const numbers = [23, 5, 9, 10, 100, 45]
+const lineBreaker = [`-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`, `-`]
 
 // Aplica um desconto de 2 nos elementos do Array
 const discount2 = (number) => number - 2
@@ -45,21 +46,26 @@ showArray([totalValue], `main`, `TOTAL VALUES`)
     3º - Total dos valores com desconto de 4
     4º - Array com todos os ímpares somando 21
 */
+showArray(lineBreaker, `main`)
 
+// Exercício 01
 const numbersSum100 = (value) => value + 100
 const numbersPlus100 = numbers.map(numbersSum100)
 showArray(numbersPlus100, `main`, `NUMBERS PLUS 100`)
 
+// Exercício 02
 const odd = (value) => value % 2 != 0
 const oddNumbers = numbers.filter(odd)
 showArray(oddNumbers, `main`, `ODD NUMBERS`)
 
+// Exercício 03
 const numbersSum04 = (value) => value + 4
 const sum04 = (a, b) => a + b
 const numbersPlus04 = numbers.map(numbersSum04)
 const totalValue04 = numbersPlus04.reduce(sum04, 0)
 showArray([totalValue04], `main`, `TOTAL VALUES PLUS 04`)
 
+// Exercício 04
 const numbersSum21 = (value) => value + 21
 const oddNumbersPlus21 = oddNumbers.map(numbersSum21)
 showArray(oddNumbersPlus21, `main`, `ODD NUMBERS PLUS 21`)
