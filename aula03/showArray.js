@@ -1,6 +1,20 @@
 `use strict`
 
-const showArray = () => alert(`Olá Mundo`)
+const showArray = (numbers) => {
+    const container = document.querySelector(`main`)
+    const div = document.createElement(`div`)
+    div.classList.add(`numbers-container`)
+
+    // Preenchendo a DIV com os elementos do Array
+    div.innerHTML = `
+        <h2>Test</h2>
+        <div class="numbers-item">
+            ${numbers.join(`</div><div class="numbers-item">`)}
+        </div>
+    `
+    // Inserindo o novo elemento (DIV) no DOM
+    container.appendChild(div)
+}
 
 // Criação de um objeto para importar as funções de um arquivo
 export {
