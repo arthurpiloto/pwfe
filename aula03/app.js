@@ -53,3 +53,9 @@ showArray(numbersPlus100, `main`, `NUMBERS PLUS 100`)
 const odd = (value) => value % 2 != 0
 const oddNumbers = numbers.filter(odd)
 showArray(oddNumbers, `main`, `ODD NUMBERS`)
+
+const numbersSum04 = (value) => value + 4
+const sum04 = (a, b) => a + b
+const numbersPlus04 = numbers.map(numbersSum04)
+const totalValue04 = numbersPlus04.reduce(sum04, 0)
+showArray([totalValue04], `main`, `TOTAL VALUES PLUS 04`)
